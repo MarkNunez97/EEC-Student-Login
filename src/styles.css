@@ -1,0 +1,16 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+/* 
+    blue        = #041E42;
+    orange      = #FF8200
+ */
+
+ body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #041E42;
+  }
+
+.page{
+    width: 100vw;
+    height: 100vh;
+  }

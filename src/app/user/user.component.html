@@ -1,0 +1,64 @@
+<div class="page">
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            
+            <span>
+                <img mat-card-image src="https://d1gntqhqj0rbcs.cloudfront.net/assets/843/UTEP_box_mark.png" class="utep-logo">
+                Engineering Edge Center
+            </span>
+            <span class="example-spacer"></span>
+            <button mat-button>About</button>
+            <button mat-button>Contact</button>
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Redial</span>
+                </button>
+                <button mat-menu-item disabled>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voicemail</span>
+                </button>
+                <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+                </button>
+            </mat-menu>
+        </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-card>
+        <mat-card-title>
+        Welcome! 'name of student'
+        </mat-card-title>
+
+        <mat-card-content>
+         <p> 
+             The Computer Science (CS) Department is committed 
+             to providing our students with an innovative educational 
+             program that contributes to their effective learning and prepares our 
+             graduates to become leaders and innovators in computer science.
+        </p>
+        <br>
+        <p> 
+            The Computer Science (CS) Department is committed 
+            to providing our students with an innovative educational 
+            program that contributes to their effective learning and prepares our 
+            graduates to become leaders and innovators in computer science.
+        </p>
+        <br>
+        <p> 
+            The Computer Science (CS) Department is committed 
+            to providing our students with an innovative educational 
+            program that contributes to their effective learning and prepares our 
+            graduates to become leaders and innovators in computer science.
+        </p>
+        <br>
+
+        </mat-card-content>
+
+        
+    </mat-card>
+</div>

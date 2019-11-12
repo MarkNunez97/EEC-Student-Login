@@ -1,0 +1,73 @@
+<div class="page">
+    <mat-card class="container" id="container">
+        <div class="form-container sign-in-container">
+            <mat-card-content>
+                <mat-card-title>
+                    Sign in
+                </mat-card-title>
+        
+                <mat-form-field class="full-width-input">
+                    <input matInput placeholder="Email" [(ngModel)]="siEmail" required>
+                </mat-form-field>
+                <br/>
+                <mat-form-field class="full-width-input">
+                    <input matInput placeholder="Password"[(ngModel)]="siPassword" type="password" required>
+                </mat-form-field>
+                <br/>
+                <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+                <mat-card-actions>
+                        <button mat-raised-button (click)="signIn()" [color]="'blue'">Sign in</button>
+                </mat-card-actions>
+            </mat-card-content>
+        </div>
+        <div class="form-container sign-up-container">
+            <mat-card-content>        
+                <mat-card-title>   
+                    Create Account
+                </mat-card-title>
+        
+                <mat-form-field class="full-width-input">
+                        <input matInput placeholder="Name" [(ngModel)]="suName" required>
+                </mat-form-field>
+                <br/>
+
+                <mat-form-field class="full-width-input">
+                    <input matInput placeholder="Email" [(ngModel)]="suEmail" required>
+                </mat-form-field>
+                <br/>
+
+                <mat-form-field class="full-width-input">
+                    <input matInput placeholder="Password"[(ngModel)]="suPassword" type="password" required>
+                </mat-form-field>
+                <br/>
+
+                <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+                
+                <mat-card-actions>
+                        <button mat-raised-button (click)="signUp()" [color]="'blue'">Sign Up</button>
+                </mat-card-actions>
+            </mat-card-content>
+        </div>
+        <div class="overlay-container">
+                <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <mat-card-title>
+                                Already have an account?
+                            </mat-card-title>
+                            <mat-card-actions>
+                                <button mat-raised-button (click)="signInOverlay()" [color]="'blue'">Sign In</button>
+                            </mat-card-actions>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                                <mat-card-title>
+                                    Don't have an account?
+                                </mat-card-title>
+                                <p>sign up to be able to track all of your submitted forms </p>
+                                <mat-card-actions>
+                                    <button mat-raised-button (click)="signUpOverlay()" [color]="'blue'">Sign Up</button>
+                                </mat-card-actions>    
+                        </div>
+                </div>
+        </div>
+    </mat-card>
+</div>
