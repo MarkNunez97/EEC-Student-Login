@@ -14,7 +14,6 @@
                     <input matInput placeholder="Password"[(ngModel)]="siPassword" type="password" required>
                 </mat-form-field>
                 <br/>
-                <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
                 <mat-card-actions>
                         <button mat-raised-button (click)="signIn()" [color]="'blue'">Sign in</button>
                 </mat-card-actions>
@@ -40,8 +39,6 @@
                     <input matInput placeholder="Password"[(ngModel)]="suPassword" type="password" required>
                 </mat-form-field>
                 <br/>
-
-                <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
                 
                 <mat-card-actions>
                         <button mat-raised-button (click)="signUp()" [color]="'blue'">Sign Up</button>
