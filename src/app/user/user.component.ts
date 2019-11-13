@@ -8,23 +8,14 @@ import { style } from '@angular/animations';
 })
 export class UserComponent implements OnInit {
 
-  sideNav:any;
-
+  showFiller = false;
+  
   constructor() { }
 
   ngOnInit() {
   }
 
   ngAfterViewInit() {
-    this.sideNav = document.getElementById('mySideNav');
   }
 
-  openNav() {
-    this.sideNav.style.width = "250px";
-    alert(this.sideNav);
-  }
-  
-  closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
 }
