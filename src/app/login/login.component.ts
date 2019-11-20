@@ -1,7 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
-import {MatDialog} from '@angular/material'
+import {Router, NavigationEnd} from '@angular/router';
 
 
 
@@ -22,9 +21,9 @@ export class LoginComponent implements OnInit {
   suPassword:string;
   
   constructor(private router: Router) { }
-  
-  ngOnInit() {
 
+  ngOnInit() {
+    
   }
 
   ngAfterViewInit() {
@@ -33,6 +32,7 @@ export class LoginComponent implements OnInit {
 
   signIn(){
     if(this.siEmail != null && this.siPassword != null){
+      this.router.navigated = false;
       this.router.navigate(["user"]);
     }else{
       alert("Make sure both Email and Password are filled out");
@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
 
   signUp(){
     if(this.suName != null && this.suEmail != null && this.suPassword != null){
-      this.router.navigate(["user"]);
+      this.router.navigate(["/user"]);
     }else{
       alert("Make sure all fields are filled out");
     }

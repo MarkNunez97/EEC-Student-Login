@@ -9,20 +9,22 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
+import { FormsComponent } from './forms/forms.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    UserComponent
+    UserComponent,
+    FormsComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     CustomMaterialModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

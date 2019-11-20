@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { style } from '@angular/animations';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-user',
@@ -7,15 +7,15 @@ import { style } from '@angular/animations';
   styleUrls: ['./user.component.css'],
 })
 export class UserComponent implements OnInit {
-
-  showFiller = false;
   
-  constructor() { }
+  constructor(private router: Router) { 
+    
+  }
 
   ngOnInit() {
   }
 
   ngAfterViewInit() {
   }
-
 }
+

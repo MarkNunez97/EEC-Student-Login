@@ -4,13 +4,20 @@
     orange      = #FF8200
  */
 
- body {
-    width: 100vw;
-    height: 100vh;
+ html,body {
     background-color: #041E42;
+    padding: 0;
+    margin-left: 0px;
+    width: 100vw;
+    height: 80vh;
   }
 
-.page{
-    width: 100vw;
-    height: 100vh;
+.login{
+  width: 100vw;
+  height: 80vh;
+  }
+
+.user{
+  width: 100vw;
+  height: 99vh;
   }
