@@ -57,6 +57,28 @@ mat-card-title{
   flex: 1;
 }
 
+mat-card-footer{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.contact-container {
+  background-color: #EEEEEE;
+  height: 100%;
+}
+
+.contact-content {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  line-height: 1.6;
+}
+
+.line{
+  border: 5 px solid black;
+  margin-top: -20px;
+}
 /* side navigation*/
 .example-container {
   width: 100%;

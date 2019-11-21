@@ -12,10 +12,16 @@ export class UserComponent implements OnInit {
     
   }
 
+  goToAbout(){
+    this.router.navigate(["about"]);
+  }
+
+  goToContact(){
+  }
+  
   ngOnInit() {
   }
 
-  ngAfterViewInit() {
-  }
+  
 }
 

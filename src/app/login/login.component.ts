@@ -32,7 +32,6 @@ export class LoginComponent implements OnInit {
 
   signIn(){
     if(this.siEmail != null && this.siPassword != null){
-      this.router.navigated = false;
       this.router.navigate(["user"]);
     }else{
       alert("Make sure both Email and Password are filled out");

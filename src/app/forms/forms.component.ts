@@ -12,7 +12,8 @@ export interface Section {
   styleUrls: ['./forms.component.css']
 })
 export class FormsComponent implements OnInit {
- 
+  footer:any;
+
   folders: Section[] = [
     {
       name: 'Advising Form',
@@ -32,7 +33,19 @@ export class FormsComponent implements OnInit {
     
   }
 
+  goToAbout(){
+    this.router.navigate(["about"]);
+  }
+
+  goToContact(){
+    this.footer.scrollIntoView();
+  }
+
   ngOnInit() {
+  }
+
+  ngAfterViewInit() {
+    this.footer = document.getElementById('footer');
   }
 
 }

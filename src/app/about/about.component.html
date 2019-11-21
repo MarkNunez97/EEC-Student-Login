@@ -1,0 +1,127 @@
+<div class="user">
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <span>
+                <img mat-card-image src="https://d1gntqhqj0rbcs.cloudfront.net/assets/843/UTEP_box_mark.png" class="utep-logo">
+                Engineering Edge Center
+            </span>
+            <span class="example-spacer"></span>
+            <button mat-button (click)="goToAbout()">About</button>
+            <button mat-button (click)="goToContact()">Contact</button>
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                <mat-icon>exit_to_app</mat-icon>
+                <a routerLink="/login" routerLinkActive="active" class="mat-menu">Sign out</a>
+                </button>
+            </mat-menu>
+        </mat-toolbar-row>
+    </mat-toolbar>
+<mat-card class="content">
+    <mat-sidenav-container class="example-container" >
+        <mat-drawer #drawer class="example-sidenav" mode="side">
+            <button mat-icon-button onclick="this.blur()" (click)="drawer.toggle()" class="close">
+                <mat-icon [inline]="true" color="primary">close icon</mat-icon>
+            </button>
+            <a routerLink="/user" routerLinkActive="active">Home</a>
+            <a routerLink="/forms" routerLinkActive="active">Forms</a>
+        </mat-drawer>
+        <mat-card-content>
+        <div class="row">
+            <div class="left">
+                <button mat-icon-button (click)="drawer.toggle()" class="menu">
+                        <mat-icon [inline]="true">menu</mat-icon>
+                </button>
+            </div>
+            <div class="center">            
+                <mat-card-title>
+                About us
+                </mat-card-title>
+            </div>
+            <div class="right"></div>
+        </div>
+
+        <p class="paragraph">
+            The university serves as a catalyst for economic development and quality of life in the El Paso del Norte region.
+            Located on the border of the United States and Mexico, UTEP students live and study in the world’s largest bi-national
+            metropolitan area, unlike any other university setting. UTEP has set a goal to become the first national research university
+            serving a 21st century student demographic while maintaining a strong commitment to access. Evidence of UTEP’s achievement
+            of this goal is its #1 ranking by the Brookings Institute for public, research-granting universities with the highest level
+            of social mobility. In 2019, UTEP achieved an extraordinary milestone by being awarded a coveted R1 designation
+            (top tier doctoral university with very high research activity) in the Carnegie Classification, making it one of only
+            130 universities among the 2,883 four-year higher education institutions across the U.S. to earn this prestigious distinction. 
+            This R1 distinction is a strong validation of UTEP’s success in delivering on its innovative access and excellence mission. 
+            It also powerfully affirms the stature of UTEP faculty researchers.
+            <br>
+            <br>
+            The Computer Science Department contributes to UTEP’s history of excellence by providing programs of the highest quality through 
+            a participatory approach to education, research, and service to the community. The undergraduate program has been accredited by 
+            the Computer Science Accreditation Commission since October 1, 1988. UTEP is designated by the NSA and DHS as a National Center 
+            of Academic Excellence in Information Assurance Education, and in 2016 a National Center of Academic Excellence in CyberOperations.
+            <br>
+            <br>
+            The department has broad expertise in the following research areas: data analytics, development of theory for practical applications, 
+            secure cyber systems, intelligent and interactive systems, computer vision and machine learning, and robust autonomic systems. Many 
+            of the department’s faculty serve on national advisory boards, editorial boards for prestigious journals, and program committees for 
+            national and international conferences.  Two of our current faculty are past or present National Science Foundation CAREER awardees, 
+            NSF’s most prestigious award for early career faculty.  In education, faculty members contribute to national models for STEM learning. 
+            UTEP leads the NSF-supported Computing Alliance of Hispanic-Serving Institutions (CAHSI), a consortium of Hispanic-Serving Institutions 
+            committed to Hispanic and female student recruitment, retention, and advancement in computing, and its Affinity Research Group model is 
+            being adopted by numerous institutions across the nation.
+        </p>
+        <div class="row">
+            <div class="left"></div>
+            <div class="center">            
+                <mat-card-title>
+                Our Mission
+                </mat-card-title>
+            </div>
+            <div class="right"></div>
+        </div>
+        <p class="paragraph">
+            The mission of the Department of Computer Science is to serve our binational region, the nation, 
+            and the world by providing access to excellence through:
+            <br>
+            <br>
+        </p>
+        <ul class="paragraph">
+            <li>Innovative educational programs that provide inclusive and effective learning environments and 
+                prepare graduates to be ethical professionals, leaders, and innovators in computer science (Student Success),
+            </li>
+            <li>Pioneering research programs that foster the creation of computing knowledge and invention 
+                of new technologies (Research and Innovation),
+            </li>
+            <li>Design, development, and potential commercialization of technologies to solve socially-relevant 
+                science and engineering problems (Commercialization), and
+            </li>
+            <li>Active local and global partnerships and collaborations with educational, government, non-profit, 
+                and commercial organizations that align with our commitment to diversity (Collaboration).
+            </li>
+        </ul>
+    </mat-card-content> 
+    <mat-card-footer id="footer">
+            <div class="contact-container">
+            
+                    <div class="contact-content">
+                        <br>
+                        <h5>CONNECT WITH US</h5>
+                        <hr class="line">
+                        The University of Texas at El Paso <br>
+                        College of Engineering<br>
+                        Engineering Edge Center<br>
+                        Engineering Building Room E-201B<br>
+                        500 W University<br>
+                        El Paso, Texas 79968<br>
+                        <br>
+                        E: engredge@utep.edu <br>
+                        P: (915) 747-5460<br>
+                        F: (915) 747-5616<br>
+                        <br>
+                    </div>
+                </div>
+    </mat-card-footer>
+    </mat-sidenav-container>
+</mat-card>
+</div>

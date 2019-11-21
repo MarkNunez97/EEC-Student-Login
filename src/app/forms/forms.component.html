@@ -6,9 +6,8 @@
                 Engineering Edge Center
             </span>
             <span class="example-spacer"></span>
-            <button mat-button>About</button>
-            <button mat-button>Contact</button>
-            <button mat-icon-button [matMenuTriggerFor]="menu">
+            <button mat-button (click)="goToAbout()">About</button>
+            <button mat-button (click)="goToContact()">Contact</button>            <button mat-icon-button [matMenuTriggerFor]="menu">
                 <mat-icon>more_vert</mat-icon>
             </button>
             <mat-menu #menu="matMenu">
@@ -25,8 +24,8 @@
             <button mat-icon-button onclick="this.blur()" (click)="drawer.toggle()" class="close">
                 <mat-icon [inline]="true" color="primary">close icon</mat-icon>
             </button>
+            <a routerLink="/user" routerLinkActive="active">Home</a>
             <a routerLink="/forms" routerLinkActive="active">Forms</a>
-            <a routerLink="/login" routerLinkActive="active">Stuff</a>
         </mat-drawer>
         <mat-card-content>
         <div class="row">
@@ -49,8 +48,28 @@
                       <p mat-line> Last updated: {{folder.updated | date}} </p>
                     </mat-list-item>
                 </mat-list>
-        
     </mat-card-content> 
+    <mat-card-footer id="footer">
+            <div class="contact-container">
+            
+                    <div class="contact-content">
+                        <br>
+                        <h5>CONNECT WITH US</h5>
+                        <hr class="line">
+                        The University of Texas at El Paso <br>
+                        College of Engineering<br>
+                        Engineering Edge Center<br>
+                        Engineering Building Room E-201B<br>
+                        500 W University<br>
+                        El Paso, Texas 79968<br>
+                        <br>
+                        E: engredge@utep.edu <br>
+                        P: (915) 747-5460<br>
+                        F: (915) 747-5616<br>
+                        <br>
+                    </div>
+                </div>
+    </mat-card-footer>
     </mat-sidenav-container>
 </mat-card>
 </div>
