@@ -17,6 +17,9 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
   }
+  goToAbout(){
+  this.router.navigate(["about"]);
+  }
 
   ngAfterViewInit() {
     this.footer = document.getElementById('footer');
