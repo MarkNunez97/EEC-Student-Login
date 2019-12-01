@@ -14,7 +14,7 @@ export interface Section {
 export class FormsComponent implements OnInit {
   footer:any;
 
-  folders: Section[] = [
+  forms: Section[] = [
     {
       name: 'Advising Form',
       updated: new Date('1/1/16'),
@@ -41,6 +41,9 @@ export class FormsComponent implements OnInit {
     this.footer.scrollIntoView();
   }
 
+  goToStatus(){
+    this.router.navigate(["status"]);
+  }
   ngOnInit() {
   }
 

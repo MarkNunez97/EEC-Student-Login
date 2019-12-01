@@ -1,0 +1,90 @@
+<div class="user">
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <span>
+                <img mat-card-image src="https://d1gntqhqj0rbcs.cloudfront.net/assets/843/UTEP_box_mark.png" class="utep-logo">
+                Engineering Edge Center
+            </span>
+            <span class="example-spacer"></span>
+            <button mat-button (click)="goToAbout()">About</button>
+            <button mat-button (click)="goToContact()">Contact</button>            <button mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                <mat-icon>exit_to_app</mat-icon>
+                <a routerLink="/login" routerLinkActive="active" class="mat-menu">Sign out</a>
+                </button>
+            </mat-menu>
+        </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-card class="content">
+        <mat-sidenav-container class="example-container" >
+            <mat-drawer #drawer class="example-sidenav" mode="side">
+                <button mat-icon-button onclick="this.blur()" (click)="drawer.toggle()" class="close">
+                    <mat-icon [inline]="true" color="primary">close icon</mat-icon>
+                </button>
+                <a routerLink="/user" routerLinkActive="active">Home</a>
+                <a routerLink="/forms" routerLinkActive="active">Forms</a>
+            </mat-drawer>
+            <mat-card-content>
+            <div class="row">
+                <div class="left">
+                    <button mat-icon-button (click)="drawer.toggle()" class="menu">
+                            <mat-icon [inline]="true">menu</mat-icon>
+                    </button>
+                </div>
+                <div class="center">            
+                    <mat-card-title>
+                    Status Tracking
+                    </mat-card-title>
+                </div>
+                <div class="right"></div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <mat-card-title class="status-title">
+                        Pending
+                    </mat-card-title>
+                    <p class="description">
+                        Expected Completion: Tuesday, December 3, 2019
+                    </p>
+                </div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+            
+            <section class="example-section">
+                <mat-progress-bar
+                    class="example-margin"
+                    mode="determinate"
+                    [value]="value">
+                </mat-progress-bar>
+            </section>
+            
+
+            </mat-card-content> 
+            <mat-card-footer id="footer">
+                    <div class="contact-container">
+                    
+                        <div class="contact-content">
+                            <br>
+                            <h5>CONNECT WITH US</h5>
+                            <hr class="line">
+                            The University of Texas at El Paso <br>
+                            College of Engineering<br>
+                            Engineering Edge Center<br>
+                            Engineering Building Room E-201B<br>
+                            500 W University<br>
+                            El Paso, Texas 79968<br>
+                            <br>
+                            E: engredge@utep.edu <br>
+                            P: (915) 747-5460<br>
+                            F: (915) 747-5616<br>
+                            <br>
+                        </div>
+                    </div>
+            </mat-card-footer>
+        </mat-sidenav-container>
+    </mat-card>
+</div>

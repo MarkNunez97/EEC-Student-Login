@@ -1,5 +1,5 @@
 .user{
-    background-color: #fff;
+  background-color: #fff;
 }
 
 mat-list {
@@ -32,6 +32,20 @@ mat-card-title{
   font-size: 32px;
   margin-top:15px;
 }
+
+.status-title{
+  font-size: 25px;
+  margin-top:20px;
+  margin-left: 100px;
+}
+
+.description{
+  margin-left: 100px;
+  line-height: 1.6;
+  font-weight: bold;
+  
+}
+
 .full-width-input {
   width: 70%;
 }
@@ -94,6 +108,22 @@ mat-card-footer{
   border: 5 px solid black;
   margin-top: -20px;
 }
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 100px;
+}
+.example-margin {
+  margin: 0 150px;
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+  background-color: #FF8200;
+}
+
+
 /* side navigation*/
 .example-container {
   width: 100%;

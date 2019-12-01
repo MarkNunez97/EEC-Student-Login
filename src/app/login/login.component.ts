@@ -19,11 +19,11 @@ export class LoginComponent implements OnInit {
   suName:string;
   suEmail:string;
   suPassword:string;
+
   
   constructor(private router: Router) { }
 
   ngOnInit() {
-    
   }
 
   ngAfterViewInit() {
