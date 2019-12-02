@@ -57,6 +57,27 @@ mat-card-title{
   flex: 1;
 }
 
+.notifications-title{
+  font-size: 30px;
+  margin-top:100px;
+  margin-left: 150px;
+}
+
+.notifications {
+  margin-left: 225px;
+  margin-right: 225px;
+  margin-top: 50px;
+  padding-bottom: 150px;
+}
+
+.list{
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+
 mat-card-footer{
   margin-left: 0px;
   margin-right: 0px;

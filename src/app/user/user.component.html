@@ -40,23 +40,28 @@
                 <mat-card-title>
                 Welcome Mark!
                 </mat-card-title>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
             </div>
             <div class="right"></div>
         </div>
+        <div class="row">
+            <div class="left">
+                <mat-card-title class="notifications-title">
+                    Notifications
+                </mat-card-title>
+            </div>
+            <div class="center"></div>
+            <div class="right"></div>
+        </div>
+        <div class="notifications">
+        <mat-list>
+            <mat-list-item *ngFor="let form of forms" class="list">
+                <mat-icon mat-list-icon>notifications</mat-icon>
+                <h4 mat-line>{{form.name}}</h4>
+                <p mat-line> Updated: {{form.updated | date}} </p>
+            </mat-list-item>
+        </mat-list>
+        </div>
+
     </mat-card-content> 
     <mat-card-footer id="footer">
             <div class="contact-container">

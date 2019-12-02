@@ -41,6 +41,7 @@
             </div>
             <div class="right"></div>
         </div>
+        <div class="list-container">
             <mat-list>
                 <mat-list-item *ngFor="let form of forms" class="list" (click)="goToStatus()">
                     <mat-icon mat-list-icon>insert_drive_file</mat-icon>
@@ -48,6 +49,7 @@
                     <p mat-line> Last updated: {{form.updated | date}} </p>
                 </mat-list-item>
             </mat-list>
+        </div>
     </mat-card-content> 
     <mat-card-footer id="footer">
             <div class="contact-container">
